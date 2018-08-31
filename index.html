@@ -49,58 +49,11 @@
     <div class="preloader">
         <div class="loading"></div>
     </div><!--/.preloader-->
+
     <!--header-->
-    <header class="stricky">
-        <div class="input-search-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form id="contact" action="#">
-                            <div class="search-input pr">
-                                <input type="text" name="name" placeholder="Search Here....." class="form-control" required="">
-                                <button type="submit" class="submit-btn"><i class="ion-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="close-button">
-                    <i class="ion-ios-close-outline"></i>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav id="cssmenu">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/logo.png" alt=""></a>
-                        </div>
-                        <div id="head-mobile"></div>
-                        <div class="button"></div>
-                        <ul class="pull-right header-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="service.html">Solutions</a></li>
-                            <li><a href="#">Document</a>
-                                <ul class="dropdown">
-                                    <li><a href="http://www.miraila.com/Miraila_Whitepaper_v1.0_En.pdf">Whitepaper</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="#">Languages</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="lang/zh/index.html">简体中文</a></li>
-                                    <li><a href="lang/fr/index.html">Français</a></li>
-                                    <li><a href="lang/es/index.html">Español</a></li>
-                                </ul><!--/.dropdown-->
-                            </li>
-                            <li class="search-option"><a href="#"><i class="ion-search"></i></a></li>
-                        </ul><!--/.pull-right-->
-                    </nav><!--/#cssmenu-->
-                </div>
-            </div>
-        </div>
-    </header><!--/header-->
+    <div class="headerpage"></div>
+	<!--/header-->
+
     <div class="slider-section">
         <div id="rev_slider_1052_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="web-product-dark122" data-source="gallery">
             <!-- START REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
@@ -504,45 +457,9 @@
         </div><!--/.container-->
     </section><!--/.cryptocurrency-->
 
-    <section class="footer-area">
-        <div class="container">
-            <div class="row footer-banner row-eq-height">
-                <div class="col-md-9 col-sm-12 col-xs-12">
-                    <div class="footer-content">
-                        <div class="footer-logo">
-                            <a href=""><img src="images/footer-logo.png" alt=""></a>
-                        </div>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="http://www.miraila.com/Miraila_Whitepaper_v1.0_En.pdf">Whitepaper</a></li>
-                            <li><a href="">Project Plan</a></li>
-                        </ul>
-                    </div><!--/.footer-content-->
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-6">
-                    <div class="social text-right content-align">
-                        <ul>
-                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href="#"><i class="ion-social-skype"></i></a></li>
-                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                            <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                        </ul>
-                    </div><!--/.social-->
-            	</div>
-            </div><!--/.rwo footer-banner-->
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="copyright-info">
-                            <p>©MIRAILA FOUNDATION LTD 2018 all rights reserved</p>
-                        </div><!--/.copyright-info-->
-                    </div>
-                </div><!--/.row-->
-            </div><!--/.copyright-->
-        </div><!--/.contianer-->
-    </section><!--/.footer area-->
-
+    <!--footer-->
+    <div class="footerpage"></div>
+	<!--/footer-->
 
     <!-- == jQuery Librery == -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -561,15 +478,21 @@
     <!-- == Owl Carousel  == -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- == Revolution Slider JS == -->
-   <script src="js/jquery.themepunch.tools.min.js"></script>
-   <script src="js/jquery.themepunch.revolution.min.js"></script>
-   <script src="js/revolution.extension.actions.min.js"></script>
-   <script src="js/revolution.extension.layeranimation.min.js"></script>
-   <script src="js/revolution.extension.navigation.min.js"></script>
-   <script src="js/revolution.extension.parallax.min.js"></script>
-   <script src="js/revolution.extension.slideanims.min.js"></script>
-   <script src="js/revolution-active.js"></script>
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/revolution.extension.actions.min.js"></script>
+    <script src="js/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution-active.js"></script>
     <!-- == Custom js  == -->
-   <script src="js/custom.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+	    $(function(){
+	        $(".headerpage").load("header.html");
+	        $(".footerpage").load("footer.html");
+	    });
+	</script>
 </body>
 </html>
